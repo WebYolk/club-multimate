@@ -1,0 +1,153 @@
+/* --- VARIABLES GLOBALES - CLUB MULTIMATE (Colores Infantiles/Educativos) --- */
+:root {
+    --primary-color: #5b21b6; /* Morado Principal (Club) */
+    --primary-hover: #4c1d95; /* Morado Oscuro */
+    --accent-green: #84cc16; /* Verde Limón */
+    --accent-blue: #0ea5e9; /* Azul Claro */
+    --accent-pink: #e11d48; /* Rosa/Rojo Cereza */
+    --accent-yellow: #facc15; /* Amarillo */
+    --text-dark: #1e293b;
+    --text-light: #475569;
+    --bg-light: #f8fafc;
+    --bg-white: #ffffff;
+    --bg-dark: #2e1065; /* Morado muy oscuro para secciones oscuras */
+    --bg-darker: #1e1b4b;
+    --btn-text: #ffffff;
+    --font-title: 'Fredoka', sans-serif;
+    --font-body: 'Poppins', sans-serif;
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: var(--font-body); }
+html { scroll-behavior: smooth; }
+body { color: var(--text-dark); line-height: 1.6; background-color: var(--bg-white); }
+
+/* UTILIDADES */
+.container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+.section { padding: 80px 0; }
+.bg-light { background-color: var(--bg-light); }
+.bg-dark { background-color: var(--bg-dark); }
+.text-white { color: white !important; }
+.text-primary { color: var(--accent-yellow) !important; }
+.text-center { text-align: center; }
+.mx-auto { margin-left: auto; margin-right: auto; }
+
+.section-title { font-family: var(--font-title); font-size: 2.8rem; font-weight: 700; margin-bottom: 10px; color: var(--primary-color); letter-spacing: 0.5px; }
+.section-subtitle { color: var(--text-light); font-size: 1.15rem; margin-bottom: 40px; }
+.title-underline { width: 80px; height: 6px; background-color: var(--accent-green); margin-bottom: 30px; border-radius: 10px; }
+
+/* BOTONES */
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 14px 32px; border-radius: 50px; font-weight: 700; text-decoration: none; transition: var(--transition); cursor: pointer; border: 2px solid transparent; font-size: 1.05rem; }
+.btn-primary { background-color: var(--accent-pink); color: var(--btn-text); }
+.btn-primary:hover { background-color: #be123c; transform: translateY(-3px) scale(1.02); box-shadow: 0 10px 20px rgba(225, 29, 72, 0.4); }
+.btn-outline { background-color: transparent; border-color: var(--accent-yellow); color: var(--accent-yellow); }
+.btn-outline:hover { background-color: var(--accent-yellow); color: var(--bg-dark); transform: translateY(-3px); }
+
+/* NAVEGACIÓN */
+.navbar { position: fixed; top: 0; width: 100%; z-index: 1000; transition: var(--transition); background-color: transparent; padding: 15px 0; }
+.navbar.scrolled { background-color: var(--bg-dark); box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); padding: 10px 0; border-bottom: 3px solid var(--accent-yellow);}
+.nav-container { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+/* LOGO */
+.logo-container { display: flex; align-items: center; text-decoration: none; }
+.nav-logo { height: 65px; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3)); border-radius: 10px; }
+
+.nav-links { list-style: none; display: flex; gap: 25px; align-items: center; }
+.nav-link { color: white; text-decoration: none; font-weight: 600; font-size: 1rem; transition: var(--transition); }
+.nav-link:hover { color: var(--accent-yellow); }
+.hamburger { display: none; color: white; font-size: 1.8rem; cursor: pointer; }
+
+/* HERO SECTION - Portada Cloudinary */
+.hero { height: 100vh; background-color: var(--primary-color); background-image: url('https://res.cloudinary.com/bw6ntjnu/image/upload/v1791512692/mmfoto-portada.jpg'); background-size: cover; background-position: center; position: relative; display: flex; align-items: center; justify-content: center; text-align: center; }
+.hero-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, rgba(91, 33, 182, 0.9) 0%, rgba(14, 165, 233, 0.8) 100%); }
+.hero-content { position: relative; z-index: 1; color: white; max-width: 900px; padding: 0 20px; }
+.badge-hero { display: inline-block; background: var(--accent-yellow); color: var(--bg-dark); padding: 8px 22px; border-radius: 50px; font-weight: 800; font-family: var(--font-title); font-size: 1.1rem; margin-bottom: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+.hero-content h1 { font-family: var(--font-title); font-size: 3.8rem; line-height: 1.2; margin-bottom: 20px; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); min-height: 130px; }
+.hero-content p { font-size: 1.25rem; margin-bottom: 35px; opacity: 0.95; font-weight: 400; }
+.hero-btns { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; }
+
+/* FRANJA DE CONFIANZA */
+.trust-banner { background-color: var(--accent-green); padding: 30px 0; border-bottom: 5px solid var(--accent-pink); }
+.trust-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; text-align: center; }
+.trust-item i { font-size: 2.8rem; color: white; margin-bottom: 10px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2)); }
+.trust-item h4 { color: var(--bg-dark); font-family: var(--font-title); font-size: 1.2rem; }
+
+/* SECCIÓN METODOLOGÍA (TARJETAS COLORES) */
+.methodology-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 25px; }
+.method-card { background: white; padding: 30px 20px; border-radius: 20px; text-align: center; box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: var(--transition); border: 2px solid transparent; }
+.method-card:hover { transform: translateY(-8px); border-color: var(--primary-color); box-shadow: 0 15px 30px rgba(91, 33, 182, 0.15); }
+.method-icon { width: 70px; height: 70px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; color: white; font-size: 2rem; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+.method-card h3 { font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 10px; color: var(--text-dark); }
+.method-card p { font-size: 0.95rem; color: var(--text-light); }
+
+/* SECCIÓN CURSOS (PROGRAMAS) */
+.courses-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; }
+.course-card { background: white; border-radius: 25px; overflow: hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.08); position: relative; display: flex; flex-direction: column; transition: var(--transition); border: 2px solid #e2e8f0; }
+.course-card:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(0,0,0,0.12); }
+.course-badge { position: absolute; top: 15px; right: 15px; background: var(--accent-pink); color: white; font-family: var(--font-title); padding: 5px 15px; border-radius: 20px; font-size: 0.9rem; z-index: 10; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+.course-header { padding: 30px 20px; text-align: center; color: white; }
+.course-header h3 { font-family: var(--font-title); font-size: 1.8rem; line-height: 1.2; }
+.course-body { padding: 30px 25px; display: flex; flex-direction: column; flex-grow: 1; }
+.course-desc { margin-bottom: 20px; font-size: 1rem; color: var(--text-light); min-height: 48px; }
+.course-features { list-style: none; margin-bottom: 25px; flex-grow: 1; }
+.course-features li { margin-bottom: 12px; font-size: 0.95rem; color: var(--text-dark); display: flex; align-items: flex-start; gap: 10px; }
+.course-features i { color: var(--primary-color); margin-top: 4px; }
+
+.price-box { background: var(--bg-light); padding: 15px; border-radius: 12px; text-align: center; margin-bottom: 25px; border: 1px dashed var(--text-light); }
+.price-amount { font-family: var(--font-title); font-size: 2.2rem; font-weight: 700; color: var(--text-dark); }
+.price-period { font-size: 1rem; color: var(--text-light); font-weight: 500; }
+.price-text { font-family: var(--font-title); font-size: 1.3rem; color: var(--primary-color); }
+
+.btn-package { width: 100%; text-align: center; padding: 14px; font-weight: 700; font-size: 1.1rem; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; gap: 8px; border-radius: 50px; color: white; transition: var(--transition); }
+.btn-package:hover { filter: brightness(1.1); transform: translateY(-2px); box-shadow: 0 8px 15px rgba(0,0,0,0.1); }
+
+/* SECCIÓN HORARIOS */
+.schedule-container { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+.schedule-group { background: white; padding: 25px; border-radius: 20px; display: flex; align-items: center; gap: 20px; min-width: 300px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); border: 2px solid transparent; transition: var(--transition); flex: 1; }
+.schedule-group:hover { border-color: var(--primary-color); transform: translateX(5px); }
+.group-icon { background: var(--primary-color); color: white; padding: 15px; border-radius: 15px; font-family: var(--font-title); font-size: 1.2rem; text-align: center; min-width: 100px; }
+.group-icon i { display: block; font-size: 2rem; margin-bottom: 5px; }
+.group-details h4 { font-family: var(--font-title); font-size: 1.3rem; color: var(--text-dark); margin-bottom: 5px; }
+.group-details p { color: var(--text-light); font-size: 1rem; font-weight: 500; }
+
+.gift-banner { display: inline-block; background: #fef08a; color: #854d0e; padding: 15px 30px; border-radius: 50px; font-size: 1.1rem; border: 2px dashed #ca8a04; }
+.gift-banner i { color: #ea580c; font-size: 1.3rem; margin-right: 10px; }
+
+/* SECCIÓN CONTACTO & REDES */
+.contact-grid-mm { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; }
+.contact-card-mm { background: rgba(255, 255, 255, 0.05); padding: 35px 20px; border-radius: 20px; text-align: center; border: 2px solid rgba(255, 255, 255, 0.1); text-decoration: none; color: white; transition: var(--transition); display: block; }
+.contact-card-mm.highlight-card { border-color: #25D366; background: rgba(37, 211, 102, 0.1); }
+.contact-card-mm:hover:not(.address-card) { transform: translateY(-8px); background: var(--primary-color); border-color: var(--accent-pink); box-shadow: 0 10px 25px rgba(225, 29, 72, 0.3); }
+
+.contact-card-mm i { font-size: 3rem; color: var(--accent-pink); margin-bottom: 15px; transition: var(--transition); }
+.contact-card-mm h3 { font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 8px; }
+.contact-detail { font-size: 1.1rem; font-weight: 500; display: block; margin-bottom: 5px; color: white; }
+.sub-text { font-size: 0.9rem; opacity: 0.7; font-weight: 300; }
+
+.address-card { border-left-color: var(--accent-yellow); border-left-width: 5px; cursor: default; }
+
+/* FOOTER Y WHATSAPP FLOTANTE */
+.footer { text-align: center; padding: 25px; background: var(--bg-darker); color: #94a3b8; font-size: 0.9rem; }
+.whatsapp-float { position: fixed; bottom: 30px; right: 30px; background: #25D366; color: white; width: 65px; height: 65px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2.2rem; z-index: 999; text-decoration: none; box-shadow: 0 4px 15px rgba(37, 211, 102, 0.5); transition: var(--transition); }
+.whatsapp-float:hover { transform: scale(1.15) rotate(-5deg); }
+
+/* ANIMACIONES FADE-IN */
+.fade-in { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease, transform 0.8s ease; }
+.fade-in.visible { opacity: 1; transform: translateY(0); }
+
+/* RESPONSIVE MÓVIL */
+@media (max-width: 992px) {
+    .hero-content h1 { font-size: 3rem; min-height: 90px; }
+}
+@media (max-width: 768px) {
+    .hamburger { display: block; }
+    .nav-links { position: absolute; top: 100%; left: -100%; width: 100%; background: var(--primary-color); flex-direction: column; text-align: center; padding: 20px 0; gap: 20px; transition: var(--transition); box-shadow: 0 10px 15px rgba(0,0,0,0.2); }
+    .nav-links.active { left: 0; }
+    .navbar { background: var(--primary-color); padding: 10px 0; }
+    .nav-logo { height: 50px; }
+    .hero-content h1 { font-size: 2.4rem; }
+    .hero-btns { flex-direction: column; }
+    .btn { width: 100%; }
+    .schedule-group { flex-direction: column; text-align: center; }
+    .group-icon { width: 100%; margin-bottom: 10px; }
+}

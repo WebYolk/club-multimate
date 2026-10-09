@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Multimate | Juega, Aprende y Multiplica</title>
+    
+    <!-- Google Fonts: Fredoka & Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome para íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <!-- Logo desde Cloudinary -->
+            <a href="#" class="logo-container">
+                <img src="https://res.cloudinary.com/bw6ntjnu/image/upload/v1791512692/mmlogo.jpg" alt="Logo Club Multimate" class="nav-logo">
+            </a>
+            
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                <li><a href="#metodologia" class="nav-link">Metodología</a></li>
+                <li><a href="#cursos" class="nav-link">Nuestros Cursos</a></li>
+                <li><a href="#horarios" class="nav-link">Horarios</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header id="inicio" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content fade-in">
+            <div class="badge-hero"><i class="fas fa-star"></i> ¡Aprender nunca fue tan divertido!</div>
+            <h1>Club Multimate <br>
+                <span class="typewrite text-primary" data-period="2000" data-type='[ "Juega, Aprende y Multiplica.", "Matemáticas Básicas.", "Psicopedagogía + NEE.", "Aprende sin Miedo." ]'>
+                    <span class="wrap"></span>
+                </span>
+            </h1>
+            <p>Convertimos los números en juegos para que tu peque aprenda con confianza. Refuerzo escolar personalizado y aprendizaje significativo.</p>
+            <div class="hero-btns">
+                <a href="#cursos" class="btn btn-primary"><i class="fas fa-book-open"></i> Ver Cursos</a>
+                <a href="https://wa.me/593999726335?text=Hola!%20Deseo%20información%20sobre%20las%20clases%20en%20el%20Club%20Multimate." target="_blank" class="btn btn-outline"><i class="fab fa-whatsapp"></i> Inscribir a mi peque</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- FRANJA DE BENEFICIOS -->
+    <section class="trust-banner">
+        <div class="container trust-grid">
+            <div class="trust-item">
+                <i class="fas fa-puzzle-piece"></i>
+                <h4>Clases Dinámicas</h4>
+            </div>
+            <div class="trust-item">
+                <i class="fas fa-chalkboard-teacher"></i>
+                <h4>Refuerzo Personalizado</h4>
+            </div>
+            <div class="trust-item">
+                <i class="fas fa-brain"></i>
+                <h4>Aprendizaje Significativo</h4>
+            </div>
+            <div class="trust-item">
+                <i class="fas fa-gift"></i>
+                <h4>Kit de Bienvenida Gratis</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN METODOLOGÍA -->
+    <section id="metodologia" class="section bg-light">
+        <div class="container">
+            <div class="text-center fade-in">
+                <h2 class="section-title">¿Qué Aprenderán?</h2>
+                <div class="title-underline mx-auto"></div>
+                <p class="section-subtitle">Nuestra metodología se basa en aprender a través del juego y la práctica.</p>
+            </div>
+
+            <div class="methodology-grid fade-in">
+                
+                <div class="method-card">
+                    <div class="method-icon" style="background-color: var(--accent-blue);"><i class="fas fa-plus"></i></div>
+                    <h3>Sumas</h3>
+                    <p>Fáciles y divertidas. Construimos bases sólidas.</p>
+                </div>
+
+                <div class="method-card">
+                    <div class="method-icon" style="background-color: var(--accent-pink);"><i class="fas fa-minus"></i></div>
+                    <h3>Restas</h3>
+                    <p>Piensa y resuelve. Desarrollamos el razonamiento lógico.</p>
+                </div>
+
+                <div class="method-card">
+                    <div class="method-icon" style="background-color: var(--accent-green);"><i class="fas fa-times"></i></div>
+                    <h3>Multiplicaciones</h3>
+                    <p>Memorización, trucos y técnicas para aprender más rápido las tablas.</p>
+                </div>
+
+                <div class="method-card">
+                    <div class="method-icon" style="background-color: var(--primary-color);"><i class="fas fa-gamepad"></i></div>
+                    <h3>Juegos Matemáticos</h3>
+                    <p>Ejercicios prácticos y sorpresas para mantener la motivación.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN CURSOS (TARJETAS INFORMATIVAS) -->
+    <section id="cursos" class="section">
+        <div class="container">
+            <div class="text-center fade-in">
+                <h2 class="section-title">Nuestros Programas</h2>
+                <div class="title-underline mx-auto"></div>
+                <p class="section-subtitle">Opciones para cada etapa del aprendizaje.</p>
+            </div>
+
+            <div class="courses-grid fade-in">
+                
+                <!-- Club Multimate Básico -->
+                <div class="course-card">
+                    <div class="course-header" style="background-color: var(--accent-yellow); color: var(--bg-dark);">
+                        <h3>Club Multimate <br> (7 a 10 años)</h3>
+                    </div>
+                    <div class="course-body">
+                        <p class="course-desc">Nivelación de matemáticas básicas. ¡Aprende las tablas de multiplicar de forma fácil y divertida!</p>
+                        <ul class="course-features">
+                            <li><i class="fas fa-check"></i> Memorización de tablas</li>
+                            <li><i class="fas fa-check"></i> Trucos y técnicas de rapidez</li>
+                            <li><i class="fas fa-check"></i> Ejercicios prácticos diarios</li>
+                        </ul>
+                        <div class="price-box">
+                            <span class="price-amount">$75</span>
+                            <span class="price-period">/ mensual</span>
+                        </div>
+                        <a href="https://wa.me/593999726335?text=Hola!%20Me%20interesa%20inscribir%20a%20mi%20peque%20en%20el%20Club%20Multimate%20(7%20a%2010%20años)." target="_blank" class="btn btn-package" style="background-color: var(--accent-yellow); color: var(--bg-dark);">
+                            <i class="fab fa-whatsapp"></i> Inscribir Ahora
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Curso Avanzado -->
+                <div class="course-card">
+                    <div class="course-badge">¡NUEVO!</div>
+                    <div class="course-header" style="background-color: var(--accent-blue);">
+                        <h3>Curso Avanzado <br> (8°, 9° y 10°)</h3>
+                    </div>
+                    <div class="course-body">
+                        <p class="course-desc">Potencia las habilidades matemáticas para los grados superiores con nuestra metodología.</p>
+                        <ul class="course-features">
+                            <li><i class="fas fa-check"></i> Refuerzo curricular</li>
+                            <li><i class="fas fa-check"></i> Resolución de problemas complejos</li>
+                            <li><i class="fas fa-check"></i> Clases exclusivas los Sábados</li>
+                        </ul>
+                         <div class="price-box">
+                            <span class="price-text">Consulta disponibilidad</span>
+                        </div>
+                        <a href="https://wa.me/593999726335?text=Hola!%20Me%20interesa%20información%20del%20Curso%20Avanzado%20de%20Matemáticas." target="_blank" class="btn btn-package" style="background-color: var(--accent-blue);">
+                            <i class="fab fa-whatsapp"></i> Consultar Cupos
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Psicopedagogía + NEE -->
+                <div class="course-card">
+                    <div class="course-header" style="background-color: var(--accent-green);">
+                        <h3>Psicopedagogía <br> + NEE</h3>
+                    </div>
+                    <div class="course-body">
+                        <p class="course-desc">Pequeños avances, grandes logros. Apoyo especializado para el desarrollo integral.</p>
+                        <ul class="course-features">
+                            <li><i class="fas fa-check"></i> Evaluaciones Psicopedagógicas completas</li>
+                            <li><i class="fas fa-check"></i> Intervención en TDAH y TEA</li>
+                            <li><i class="fas fa-check"></i> Dificultades de aprendizaje</li>
+                            <li><i class="fas fa-check"></i> Informes escolares y adaptaciones</li>
+                        </ul>
+                        <div class="price-box">
+                            <span class="price-text">Atención Personalizada</span>
+                        </div>
+                        <a href="https://wa.me/593999726335?text=Hola!%20Deseo%20información%20sobre%20el%20servicio%20de%20Psicopedagogía." target="_blank" class="btn btn-package" style="background-color: var(--accent-green);">
+                            <i class="fab fa-whatsapp"></i> Agendar Cita
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN HORARIOS -->
+    <section id="horarios" class="section bg-light">
+        <div class="container">
+            <div class="text-center fade-in">
+                <h2 class="section-title">Horarios Disponibles</h2>
+                <div class="title-underline mx-auto" style="background-color: var(--accent-pink);"></div>
+                <p class="section-subtitle">¡Cupos limitados para este mes! Elige el grupo que mejor se adapte a ti.</p>
+            </div>
+
+            <div class="schedule-container fade-in">
+                
+                <div class="schedule-group">
+                    <div class="group-icon"><i class="fas fa-users"></i> Grupo A</div>
+                    <div class="group-details">
+                        <h4>Lunes y Martes</h4>
+                        <p>14:00 (2:30 p.m.) a 17:30 (5:30 p.m.)</p>
+                    </div>
+                </div>
+
+                <div class="schedule-group">
+                    <div class="group-icon" style="background-color: var(--accent-green);"><i class="fas fa-users"></i> Grupo B</div>
+                    <div class="group-details">
+                        <h4>Miércoles y Jueves</h4>
+                        <p>14:00 (2:30 p.m.) a 17:30 (5:30 p.m.)</p>
+                    </div>
+                </div>
+
+                <div class="schedule-group">
+                    <div class="group-icon" style="background-color: var(--accent-pink);"><i class="fas fa-users"></i> Grupo C</div>
+                    <div class="group-details">
+                        <h4>Viernes y Sábado</h4>
+                        <p>Viernes: 14:30 a 17:30 <br> Sábado: 09:00 a 12:00</p>
+                    </div>
+                </div>
+
+                 <div class="schedule-group special-group">
+                    <div class="group-icon" style="background-color: var(--accent-blue);"><i class="fas fa-graduation-cap"></i> Avanzado</div>
+                    <div class="group-details">
+                        <h4>Sábados Exclusivo</h4>
+                        <p>14:00 (2:00 p.m.) a 17:00 (5:00 p.m.)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-4 fade-in" style="margin-top: 40px;">
+                <div class="gift-banner">
+                    <i class="fas fa-gift"></i> ¡Inscríbete hoy y recibe un <strong>Kit de Bienvenida</strong> y acceso a <strong>Clases Demostrativas Gratuitas</strong>!
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN CONTACTO Y UBICACIÓN -->
+    <section id="contacto" class="section bg-dark text-white">
+        <div class="container fade-in">
+            <div class="text-center mb-5" style="margin-bottom: 50px;">
+                <h2 class="section-title text-white">¡Sé Parte de Esta Gran Aventura!</h2>
+                <div class="title-underline mx-auto" style="background-color: var(--accent-yellow);"></div>
+                <p class="section-subtitle text-white" style="opacity: 0.9;">Estamos listos para apoyar a tu peque en su aprendizaje.</p>
+            </div>
+
+            <div class="contact-grid-mm">
+                
+                <!-- WhatsApp -->
+                <a href="https://wa.me/593999726335" target="_blank" class="contact-card-mm highlight-card">
+                    <i class="fab fa-whatsapp"></i>
+                    <h3>Inscripciones por WhatsApp</h3>
+                    <span class="contact-detail">099 972 6335</span>
+                    <span class="sub-text">Clic para chatear</span>
+                </a>
+
+                <!-- Email -->
+                <a href="mailto:multimate1999@gmail.com" class="contact-card-mm">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Correo Electrónico</h3>
+                    <span class="contact-detail">multimate1999@gmail.com</span>
+                    <span class="sub-text">Escríbenos tus dudas</span>
+                </a>
+
+                <!-- Redes Sociales -->
+                <a href="https://www.facebook.com/profile.php?id=61592624113874" target="_blank" class="contact-card-mm">
+                    <i class="fab fa-facebook"></i>
+                    <h3>Facebook</h3>
+                    <span class="contact-detail">Club Multimate</span>
+                    <span class="sub-text">Síguenos</span>
+                </a>
+
+                <!-- Ubicación Exacta -->
+                <div class="contact-card-mm address-card">
+                    <i class="fas fa-map-marker-alt" style="color: var(--accent-yellow);"></i>
+                    <h3>Ubicación</h3>
+                    <span class="contact-detail">Vía 18 de Noviembre y Francisco de Orellana</span>
+                    <span class="sub-text">Lago Agrio - Nueva Loja, Ecuador (210201)</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>&copy; 2026 Club Multimate. Todos los derechos reservados. ¡Juega, aprende y multiplica!</p>
+    </footer>
+
+    <!-- BOTÓN WHATSAPP FLOTANTE -->
+    <a href="https://wa.me/593999726335" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- SCRIPT JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
